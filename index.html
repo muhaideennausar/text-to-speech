@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1250.37 537.53a41.33 41.33 0 1 0 77.53-28.68z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M88.18 219.72a38.99 38.99 0 1 0-57.03 53.17z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1034.45 207.28L1058.07 207.28L1058.07 230.9L1034.45 230.9z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M334.68 287.89 a22.55 22.55 0 1 0 45.1 0 a22.55 22.55 0 1 0 -45.1 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1098.05 88.75L1136.2 88.75L1136.2 126.9L1098.05 126.9z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M723.08 454.82a29.64 29.64 0 1 0-47.97-34.83z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M988.15 185.14L1003.68 185.14L1003.68 188.02L988.15 188.02z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M717.2 186.75a32.45 32.45 0 1 0-8.63 64.33z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1402.71 484.12a34.92 34.92 0 1 0-68.57-13.29z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M925.77 352.63L962.64 352.63L962.64 355.45L925.77 355.45z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1117.63 351.99L1161.41 351.99L1161.41 395.77L1117.63 395.77z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M912.55 400.02 a1.35 1.35 0 1 0 2.7 0 a1.35 1.35 0 1 0 -2.7 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M527.93 287.98 a44.26 44.26 0 1 0 88.52 0 a44.26 44.26 0 1 0 -88.52 0z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M239.04 314.07L278.2 314.07L278.2 327.6L239.04 327.6z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M223.57 376.95a4.8 4.8 0 1 0 2.55-9.26z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M27.92 372.58 a31.28 31.28 0 1 0 62.56 0 a31.28 31.28 0 1 0 -62.56 0z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M776.25 248.86L814.87 248.86L814.87 287.48L776.25 287.48z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M924.13 435.06L949.6 435.06L949.6 484.25L924.13 484.25z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M124.26 425.65L149.56 425.65L149.56 468.93L124.26 468.93z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1378.68 554.75 a16.53 16.53 0 1 0 33.06 0 a16.53 16.53 0 1 0 -33.06 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1372.3 451.82L1385.91 451.82L1385.91 506.92L1372.3 506.92z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M50.03 533.2 a6.69 6.69 0 1 0 13.38 0 a6.69 6.69 0 1 0 -13.38 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M343.42 239.19L394.82 239.19L394.82 290.59L343.42 290.59z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M600.41 128.09L642.19 128.09L642.19 146.4L600.41 146.4z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1248.26 292.32L1303.77 292.32L1303.77 347.83L1248.26 347.83z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M952.33 413.58L958.39 413.58L958.39 466.31L952.33 466.31z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M368.86 388.49L381.21 388.49L381.21 391.34L368.86 391.34z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M569.22 301.47a11.06 11.06 0 1 0-18.1 12.71z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M916.93 315.5L947.14 315.5L947.14 345.71L916.93 345.71z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1309.05 102.8 a26.77 26.77 0 1 0 53.54 0 a26.77 26.77 0 1 0 -53.54 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M744.86 495.21L758.74 495.21L758.74 535.74L744.86 535.74z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M806.79 548.33 a3.49 3.49 0 1 0 6.98 0 a3.49 3.49 0 1 0 -6.98 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M971.98 354.47L1026.15 354.47L1026.15 390.82L971.98 390.82z' stroke='%23d3b714'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"););
+        }
+        .container
+        {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            
+        }
+        h1{
+            font-weight: 300;
+            text-shadow: 3px 14px 10px black;
+        }
+        #text-input{
+            margin-top:20px ;
+            margin-bottom: 20px;
+            height: 200px;
+            width: 400px;
+            box-shadow: 5px 6px 10px black;
+            outline: none;
+        }
+        button{
+            background-color: black;
+            color: aquamarine;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: aliceblue;"> Text To Speech</h1>
+        <textarea id="text-input"></textarea>
+        <button onclick="speak()" id="speak-button">Text To Speak</button>
+    </div>
+    <script>
+        document.getElementById('speak-button').addEventListener('click', function() {
+            const text = document.getElementById('text-input').value;
+        
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+        
+                speechSynthesis.speak(utterance);
+            } else {
+                alert('Your browser does not support text-to-speech.');
+            }
+        });
+        </script>
+</body>
+</html>
